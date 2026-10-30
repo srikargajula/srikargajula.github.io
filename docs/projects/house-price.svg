@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hpBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#080E1A" />
+      <stop offset="100%" stop-color="#04060C" />
+    </linearGradient>
+    <linearGradient id="curveG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#hpBg)" />
+
+  <!-- Graph Grid -->
+  <g stroke="rgba(255, 255, 255, 0.07)" stroke-width="1">
+    <line x1="120" y1="80" x2="680" y2="80" />
+    <line x1="120" y1="140" x2="680" y2="140" />
+    <line x1="120" y1="200" x2="680" y2="200" />
+    <line x1="120" y1="260" x2="680" y2="260" />
+    <line x1="120" y1="320" x2="680" y2="320" />
+    <line x1="120" y1="380" x2="680" y2="380" />
+
+    <line x1="120" y1="80" x2="120" y2="380" />
+    <line x1="260" y1="80" x2="260" y2="380" />
+    <line x1="400" y1="80" x2="400" y2="380" />
+    <line x1="540" y1="80" x2="540" y2="380" />
+    <line x1="680" y1="80" x2="680" y2="380" />
+  </g>
+
+  <!-- Axis Labels -->
+  <text x="120" y="405" font-family="monospace" font-size="11" fill="#64748B">500 sqft</text>
+  <text x="260" y="405" font-family="monospace" font-size="11" fill="#64748B">1200 sqft</text>
+  <text x="400" y="405" font-family="monospace" font-size="11" fill="#64748B">2000 sqft</text>
+  <text x="540" y="405" font-family="monospace" font-size="11" fill="#64748B">3000 sqft</text>
+  <text x="660" y="405" font-family="monospace" font-size="11" fill="#64748B">4500 sqft</text>
+
+  <text x="60" y="325" font-family="monospace" font-size="11" fill="#64748B">$100k</text>
+  <text x="60" y="265" font-family="monospace" font-size="11" fill="#64748B">$250k</text>
+  <text x="60" y="205" font-family="monospace" font-size="11" fill="#64748B">$450k</text>
+  <text x="60" y="145" font-family="monospace" font-size="11" fill="#64748B">$700k</text>
+
+  <!-- Scatter data points -->
+  <circle cx="150" cy="350" r="4" fill="#38BDF8" opacity="0.7" />
+  <circle cx="180" cy="330" r="4" fill="#38BDF8" opacity="0.7" />
+  <circle cx="210" cy="310" r="4" fill="#38BDF8" opacity="0.7" />
+  <circle cx="250" cy="300" r="4" fill="#38BDF8" opacity="0.7" />
+  <circle cx="290" cy="270" r="4" fill="#38BDF8" opacity="0.7" />
+  <circle cx="330" cy="250" r="4" fill="#38BDF8" opacity="0.7" />
+  <circle cx="360" cy="230" r="4" fill="#38BDF8" opacity="0.7" />
+  <circle cx="390" cy="210" r="4" fill="#38BDF8" opacity="0.7" />
+  <circle cx="430" cy="190" r="4" fill="#38BDF8" opacity="0.7" />
+  <circle cx="480" cy="180" r="4" fill="#38BDF8" opacity="0.7" />
+  <circle cx="520" cy="150" r="4" fill="#38BDF8" opacity="0.7" />
+  <circle cx="570" cy="140" r="4" fill="#38BDF8" opacity="0.7" />
+  <circle cx="620" cy="110" r="4" fill="#38BDF8" opacity="0.7" />
+  <circle cx="650" cy="100" r="4" fill="#38BDF8" opacity="0.7" />
+
+  <!-- Regression Best Fit Curve -->
+  <path d="M 130 360 Q 320 280 430 200 T 670 95" fill="none" stroke="url(#curveG)" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Floating Stats Card -->
+  <g transform="translate(460, 240)">
+    <rect width="210" height="110" rx="10" fill="#0E1726" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="16" y="28" font-family="sans-serif" font-size="12" font-weight="bold" fill="#F8FAFC">MODEL METRICS</text>
+    <text x="16" y="55" font-family="monospace" font-size="13" fill="#38BDF8">R² Score: 0.924</text>
+    <text x="16" y="75" font-family="monospace" font-size="13" fill="#A5B4FC">RMSE: ±$14,200</text>
+    <text x="16" y="95" font-family="monospace" font-size="12" fill="#10B981">Algorithm: GradientBoosting</text>
+  </g>
+
+  <!-- Title Pill -->
+  <g transform="translate(120, 35)">
+    <rect width="220" height="30" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="1" />
+    <text x="110" y="20" font-family="sans-serif" font-size="12" font-weight="bold" fill="#38BDF8" text-anchor="middle">SUPERVISED ML REGRESSION</text>
+  </g>
+</svg>

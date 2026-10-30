@@ -8,6 +8,10 @@ export default defineConfig({
     tailwindcss(),
     react(),
   ],
+  build: {
+    outDir: 'docs',
+    emptyOutDir: true,
+  },
   server: {
     host: true,
     allowedHosts: true,
