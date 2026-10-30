@@ -208,19 +208,72 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
                 <span className="text-xs font-semibold text-white">Django &amp; Node</span>
               </motion.div>
 
-              {/* Main Avatar Card Frame */}
+              {/* Main Code Terminal Card Frame */}
               <div className="relative p-1 rounded-3xl bg-gradient-to-b from-indigo-500/30 via-white/[0.08] to-cyan-500/20 shadow-2xl shadow-indigo-900/20">
                 <div className="relative rounded-[22px] bg-[#0A0B14] p-5 overflow-hidden border border-white/[0.05]">
                   {/* Subtle Grid Pattern Overlay */}
                   <div className="absolute inset-0 bg-[radial-gradient(#6366f1_1px,transparent_1px)] [background-size:16px_16px] opacity-10" />
 
-                  {/* Avatar Illustration */}
-                  <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-b from-slate-900 to-[#0B0C15] flex items-center justify-center p-2">
-                    <img
-                      src="/avatar.svg"
-                      alt="Srikar Gajula - AI Engineer"
-                      className="w-full h-full object-contain filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.6)]"
-                    />
+                  {/* AI Engineering Code Terminal Console */}
+                  <div className="relative w-full rounded-2xl bg-[#06070D] p-4 font-mono text-xs border border-white/[0.08] shadow-inner text-left overflow-hidden">
+                    {/* Window Controls Header */}
+                    <div className="flex items-center justify-between pb-3 mb-3 border-b border-white/[0.06]">
+                      <div className="flex items-center gap-1.5">
+                        <span className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
+                        <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
+                        <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
+                      </div>
+                      <span className="text-[11px] text-slate-400 font-mono">ai_engineer.py</span>
+                      <span className="text-[10px] text-indigo-400 font-mono">Python 3.12</span>
+                    </div>
+
+                    {/* Syntax Highlighted Terminal Content */}
+                    <div className="space-y-1 text-slate-300 text-[11px] sm:text-xs leading-relaxed">
+                      <div>
+                        <span className="text-purple-400">class</span>{' '}
+                        <span className="text-cyan-300">AIEngineer</span>:
+                      </div>
+                      <div className="pl-4">
+                        <span className="text-purple-400">def</span>{' '}
+                        <span className="text-indigo-300">__init__</span>(self):
+                      </div>
+                      <div className="pl-8 text-slate-300">
+                        self.name = <span className="text-emerald-300">"Srikar Gajula"</span>
+                      </div>
+                      <div className="pl-8 text-slate-300">
+                        self.role = <span className="text-emerald-300">"AI Engineer"</span>
+                      </div>
+                      <div className="pl-8 text-slate-300">
+                        self.company = <span className="text-emerald-300">"eMedicalPractice"</span>
+                      </div>
+                      <div className="pl-8 text-slate-300">
+                        self.education = <span className="text-emerald-300">"B.Tech AI &amp; ML"</span>
+                      </div>
+                      <div className="pl-8 text-slate-300">
+                        self.stack = [
+                        <span className="text-indigo-300">"LLMs"</span>,{' '}
+                        <span className="text-indigo-300">"PyTorch"</span>,{' '}
+                        <span className="text-indigo-300">"Python"</span>,{' '}
+                        <span className="text-indigo-300">"Django"</span>]
+                      </div>
+                      <div className="pl-4 pt-1">
+                        <span className="text-purple-400">def</span>{' '}
+                        <span className="text-indigo-300">mission</span>(self):
+                      </div>
+                      <div className="pl-8 text-amber-200">
+                        <span className="text-purple-400">return</span>{' '}
+                        <span>"Building intelligent, scalable solutions"</span>
+                      </div>
+                    </div>
+
+                    {/* Live System Status Bar */}
+                    <div className="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px]">
+                      <div className="flex items-center gap-1.5 text-emerald-400">
+                        <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                        <span>AI Inference: Active</span>
+                      </div>
+                      <span className="text-slate-400 font-mono">Status: Ready</span>
+                    </div>
                   </div>
 
                   {/* Recruiter Quick Fact Sheet */}
