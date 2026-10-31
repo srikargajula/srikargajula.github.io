@@ -4,7 +4,7 @@ export interface Project {
   subtitle: string;
   description: string;
   longDescription: string;
-  category: 'All' | 'AI & ML' | 'Full Stack' | 'Backend & Cloud';
+  category: 'All' | 'AI & ML' | 'Deep Learning' | 'Predictive Analytics';
   technologies: string[];
   highlights: string[];
   githubUrl: string;
@@ -87,7 +87,7 @@ export const portfolioData = {
     ],
     bioParagraphs: [
       'I am an AI Engineer at eMedicalPractice with a strong academic foundation in Computer Science Engineering, specializing in Artificial Intelligence and Machine Learning from Malla Reddy Engineering College (2022–2026, CGPA: 7.5/10).',
-      'My core strength lies in combining theoretical machine learning algorithms with practical, production-ready software engineering. From architecting transformer-based language models and smart IoT agricultural diagnostic systems to building secure backend microservices with Django and Node.js, I focus on building reliable, scalable, and impactful solutions.',
+      'My core strength lies in combining theoretical machine learning algorithms with practical, production-ready software engineering. From architecting deep learning language models and smart IoT agricultural diagnostic systems to building predictive analytics pipelines and modern web applications with FastAPI, React, and Python, I focus on building reliable, scalable, and impactful solutions.',
       'Driven by curiosity, I actively explore Generative AI, Retrieval-Augmented Generation (RAG), and agentic workflows to automate complex domain workflows. When solving problems, I prioritize clean architecture, reproducible data pipelines, and intuitive user experiences.',
     ],
     languages: [
@@ -364,96 +364,49 @@ export const portfolioData = {
         'Telemetry dashboard designed for actionable farmer decision-making',
         'Showcased and commended at Inter-college Project Expo',
       ],
-      githubUrl: 'https://github.com/srikargajula/agrigenius-smart-farming',
+      githubUrl: 'https://github.com/srikargajula/Agrigenius-the-smart-farming-app',
       featured: true,
       image: '/projects/agrigenius.svg',
     },
     {
-      id: 'affiliate-store',
-      title: 'Affiliate Store – Amazon Must Haves',
-      subtitle: 'Django-Based E-Commerce Affiliate Platform',
-      description:
-        'A comprehensive Django e-commerce affiliate website featuring curated product categories, trending items, automated search, and seamless affiliate purchase link integration.',
-      longDescription:
-        'Engineered with Python and Django, this production-ready web platform aggregates trending and top-rated Amazon products. It features organized category taxonomies, high-converting product showcase cards, automated affiliate link tagging, responsive mobile layout, and an intuitive administrative backend for effortless catalog management.',
-      category: 'Full Stack',
-      technologies: ['Python', 'Django', 'HTML5', 'CSS3', 'JavaScript', 'SQLite'],
-      highlights: [
-        'Curated product collections (Must-Haves, Trending Deals, Category Showcase)',
-        'Affiliate purchase redirection with custom referral tracking',
-        'Robust Django ORM backend with administrative product controls',
-        'Fully responsive mobile and desktop browsing experience',
-      ],
-      githubUrl: 'https://github.com/srikargajula/amazon-must-haves-store',
-      liveUrl: 'https://amazonmusthaves-demo.vercel.app',
-      featured: true,
-      image: '/projects/affiliate-store.svg',
-    },
-    {
-      id: 'jwt-auth-system',
-      title: 'JWT Authentication System',
-      subtitle: 'Production-Grade Backend Security Service',
-      description:
-        'A robust backend authentication and authorization microservice featuring JSON Web Tokens, bcrypt password hashing, token verification middleware, and MongoDB persistence.',
-      longDescription:
-        'Built using Node.js and Express.js, this application provides an industry-standard authentication architecture. It implements stateless JWT token issuance, protected route access guards, input sanitization, secure password hashing with bcrypt, and comprehensive error handling verified with Postman.',
-      category: 'Backend & Cloud',
-      technologies: [
-        'Node.js',
-        'Express.js',
-        'JWT',
-        'MongoDB',
-        'Bcrypt',
-        'Postman',
-      ],
-      highlights: [
-        'Secure token generation and expiration management',
-        'Bcrypt cryptographic hashing for user credentials',
-        'Protected endpoint middleware and role validation',
-        'RESTful API architecture tested with comprehensive Postman test suites',
-      ],
-      githubUrl: 'https://github.com/srikargajula/jwt-auth-system',
-      featured: true,
-      image: '/projects/jwt-auth.svg',
-    },
-    {
-      id: 'gpt2-text-gen',
-      title: 'Text Generation Model using GPT-2',
-      subtitle: 'Generative Language Modeling & Synthesis',
-      description:
-        'A natural language generation system leveraging OpenAI GPT-2 architecture, fine-tuned for specialized text completion, prompt conditioning, and diverse token decoding.',
-      longDescription:
-        'Developed using Python, Hugging Face Transformers, PyTorch, and NLTK. Explores autoregressive causal language modeling, tuning hyperparameters such as temperature, top-k, and nucleus (top-p) sampling to achieve fluent and contextually relevant text generation.',
-      category: 'AI & ML',
-      technologies: ['Python', 'GPT-2', 'PyTorch', 'Transformers', 'NLTK'],
-      highlights: [
-        'Pretrained transformer fine-tuning and weight optimization',
-        'Dynamic temperature and Top-P sampling controls',
-        'Custom prompt conditioning and context persistence',
-        'Quantitative evaluation of output fluency and perplexity',
-      ],
-      githubUrl: 'https://github.com/srikargajula/gpt2-text-generation',
-      featured: false,
-      image: '/projects/gpt2-gen.svg',
-    },
-    {
       id: 'house-price-prediction',
-      title: 'House Price Prediction System',
-      subtitle: 'Supervised Machine Learning Regression Pipeline',
+      title: 'HousePrice AI',
+      subtitle: 'Machine Learning Real Estate Analytics Web Application',
       description:
-        'An end-to-end regression pipeline for predicting real estate market prices based on multiple structural and geographic attributes using Scikit-learn and Pandas.',
+        'An end-to-end regression and analytics platform for forecasting real estate market prices based on multiple structural and geographic attributes using Scikit-learn, FastAPI, and React.',
       longDescription:
-        'Encompasses complete exploratory data analysis (EDA), automated outlier removal, feature scaling, collinearity analysis, and cross-validated ensemble regression (Random Forests and Gradient Boosters) to forecast property values accurately.',
-      category: 'AI & ML',
-      technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib'],
+        'Encompasses complete exploratory data analysis (EDA), automated outlier removal, feature scaling, collinearity analysis, and cross-validated ensemble regression (Random Forests and Gradient Boosters) to forecast property values accurately. Features an interactive modern dashboard built with React and Tailwind CSS.',
+      category: 'Predictive Analytics',
+      technologies: ['Python', 'FastAPI', 'Scikit-learn', 'React', 'Vite', 'Tailwind CSS', 'Pandas'],
       highlights: [
         'Feature engineering and skewness handling on real estate datasets',
+        'FastAPI backend with optimized inference latency',
         'Cross-validated ensemble modeling minimizing RMSE and MAE',
-        'Feature importance ranking to isolate key valuation drivers',
+        'Dynamic React & Tailwind dashboard with interactive property valuation',
       ],
-      githubUrl: 'https://github.com/srikargajula/house-price-prediction',
-      featured: false,
+      githubUrl: 'https://github.com/srikargajula/HousePrice-AI',
+      featured: true,
       image: '/projects/house-price.svg',
+    },
+    {
+      id: 'ai-text-gen-studio',
+      title: 'AI Text Generation Studio',
+      subtitle: 'Deep Learning (LSTM & Keras) Text Generation Platform',
+      description:
+        'An interactive natural language generation platform leveraging deep learning Recurrent Neural Networks (LSTM) and Keras to synthesize contextual text in real time with Streamlit.',
+      longDescription:
+        'Architected and trained deep LSTM recurrent neural networks on textual corpora using Keras and TensorFlow. Explores sequence vectorization, custom embeddings, and dynamic temperature sampling to achieve fluent and creative language modeling.',
+      category: 'Deep Learning',
+      technologies: ['Python', 'Deep Learning', 'LSTM', 'Keras', 'TensorFlow', 'Streamlit', 'NLP'],
+      highlights: [
+        'Deep Long Short-Term Memory (LSTM) recurrent neural network architecture',
+        'Custom text tokenization, sequence vectorization, and embeddings',
+        'Dynamic temperature tuning to control output diversity and creativity',
+        'Interactive Streamlit studio interface for real-time text synthesis',
+      ],
+      githubUrl: 'https://github.com/srikargajula/AI-Text-Generation-Studio',
+      featured: true,
+      image: '/projects/gpt2-gen.svg',
     },
     {
       id: 'language-detection',
@@ -464,13 +417,13 @@ export const portfolioData = {
       longDescription:
         'Constructed with Python, Scikit-learn, and character n-gram text vectorization. Employs Multinomial Naive Bayes algorithms to distinguish between more than 20 distinct languages with sub-second inference speeds.',
       category: 'AI & ML',
-      technologies: ['Python', 'NLP', 'Scikit-learn', 'Supervised Learning'],
+      technologies: ['Python', 'NLP', 'Scikit-learn', 'Supervised Learning', 'NLTK'],
       highlights: [
         'Sub-50ms inference time for instant client-side prediction',
         'Robust n-gram tokenization resistant to typographical noise',
         'Multiclass classification benchmarked with high accuracy metrics',
       ],
-      githubUrl: 'https://github.com/srikargajula/language-detection-nlp',
+      githubUrl: 'https://github.com/srikargajula',
       featured: false,
       image: '/projects/language-detect.svg',
     },

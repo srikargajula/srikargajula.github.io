@@ -11,7 +11,7 @@ import type { Project } from '../data/portfolioData';
 import { ProjectModal } from './ProjectModal';
 import { GithubIcon } from './SocialIcons';
 
-const categories = ['All', 'AI & ML', 'Full Stack', 'Backend & Cloud'] as const;
+const categories = ['All', 'AI & ML', 'Deep Learning', 'Predictive Analytics'] as const;
 
 export const Projects: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
@@ -58,7 +58,7 @@ export const Projects: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-slate-400 text-base sm:text-lg mt-3"
           >
-            Practical applications spanning smart agriculture with AI &amp; IoT, Django full-stack platforms, secure JWT authorization services, and generative NLP models.
+            Practical applications spanning smart agriculture with AI &amp; IoT, real estate house price predictive analytics, and deep learning text generation platforms.
           </motion.p>
         </div>
 

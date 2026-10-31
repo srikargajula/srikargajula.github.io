@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, ExternalLink, Trophy, Calendar } from 'lucide-react';
+import { Award, Trophy, Calendar } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 export const Certifications: React.FC = () => {
@@ -79,22 +79,15 @@ export const Certifications: React.FC = () => {
                 </p>
               </div>
 
-              {/* Footer with year & verification */}
+              {/* Footer with issued year */}
               <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs">
                 <span className="font-mono text-slate-400 flex items-center gap-1.5">
                   <Calendar className="w-3.5 h-3.5 text-indigo-400" />
-                  {cert.year}
+                  Issued {cert.year}
                 </span>
-
-                <a
-                  href={cert.credentialUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-indigo-400 hover:text-indigo-300 font-semibold"
-                >
-                  <span>Verify</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
+                <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                  Certified
+                </span>
               </div>
             </motion.div>
           ))}
